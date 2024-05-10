@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(0, 0, 0);
+
+    font-family: 'Satisfy', cursive;
+}
+
+#viewport {
+    width: 1200px;
+    height: 600px;
+    margin: 50px auto 0px auto;
+    overflow: hidden;
+}
+
+#screens {
+    background-image: url(../images/startscreenBackground.png);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btns {
+    margin-top: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+#startBtn,
+#tutorialBtn {
+    background-color: transparent;
+    border: 0;
+    margin: 0px 10px;
+    transition: .2s ease-in-out 0s;
+}
+
+#startBtn:hover,
+#tutorialBtn:hover{
+      cursor: pointer;
+      transform: scale(1.25);
+}
+
+#gameContainer {
+    position: absolute;
+    display: none;
+}
+
+.gameElement {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#main {
+    width: 1200px;
+    height: 600px;
+}
+
+#score {
+    display: none;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 100;
+    color: white;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.scoreText {
+    display: inline;
+}
+
+#purpleBerryImage {
+    height: 25px;
+    margin-right: 10px;
+}
+
+#levelNumber {
+    display: none;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    font-size: 30px;
+    margin-top: 50px;
+    background-color: rgb(0, 0, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    width: 100%;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    font-size: 20px;
+}

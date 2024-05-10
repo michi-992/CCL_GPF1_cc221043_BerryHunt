@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BERRY HUNT</title>
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/purpleBerryIcon.png">
+</head>
+
+<body>
+    <div id="viewport" style="width: 1200px; height: 600px;">
+        <div id="screens">
+            <div id="btns">
+                <button id="startBtn" onclick="startGame()">
+                    <img src="./images/startButtonImage.png" style="height: 80px; width: 160px">
+                </button>
+                <button id="tutorialBtn" onclick="displayTutorial()">
+                    <img src="./images/tutorialButtonImage.png" style="height: 80px; width: 160px">
+                </button>
+            </div>
+        </div>
+
+        <div id="gameContainer" style="width: 1200px; height: 600px;">
+            <canvas class="gameElement" id="main" width="1200" height="600"
+                style="width: 1200px; height: 600;"></canvas>
+        </div>
+
+        <div id="score">
+            <p class="scoreText" id="berryScore"></p>
+            <img src="./images/purpleBerryIcon.png" id="purpleBerryImage">
+        </div>
+
+        <div id="levelNumber">
+            Level 1
+        </div>
+    </div>
+</body>
+
+<footer>
+    BERRY HUNT: game and graphics by Michaela Topalovic
+</footer>
+
+
+
+<script src="./helpers/gravity.js"></script>
+<script src="gameManager.js"></script>
+<script src="canvas.js"></script>
+
+<!--all files containing classes for game objects-->
+<script src="./objects/gameObject.js"></script>
+<script src="./objects/scrollerBorder.js"></script>
+<script src="./objects/imageObject.js"></script>
+<script src="./objects/playerFigure.js"></script>
+<script src="./objects/rockPlatform.js"></script>
+<script src="./objects/movingPlatform.js"></script>
+<script src="./objects/berryShrub.js"></script>
+<script src="./objects/purpleBerry.js"></script>
+<script src="./objects/orangeBerry.js"></script>
+
+<!--setup (all ui functionalities and object placement) and player input handling-->
+<script src="./setup/stageSetup.js"></script>
+<script src="./setup/inputHandling.js"></script>
+
+
+</html>
